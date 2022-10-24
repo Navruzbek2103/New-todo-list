@@ -32,54 +32,72 @@
       </div>
     </div>
   </header>
+
   <main class="main">
     <div class="container">
       <div class="main-container my-5 border rounded-4 p-3 bg-info">
         <ul class="main-list list-unstyled d-flex mt-4 py-2">
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal fs-5">Tasks name: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-5">Tasks name: </h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal fs-5">Tasks of comment: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-5">Tasks of comment: </h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal fs-5">Deadline: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-5">Deadline: </h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal fs-5">Priority: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-5">Priority: </h3>
           </li>
         </ul>
+
+
         <ul class="list-group d-flex flex-column gap-3">
-          <li class="list-group-item rounded-2 py-3">
+          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
             <div class="checkbox-inner">
-              <label class="form-check-label me-2 fs-4 d-flex">
+              <label class="form-check-label fs-4 d-flex">
                 <input class="form-check-input me-1" type="checkbox" value="">
-                <p class="checkbox-task-text">First checkbox</p>
+                <p class="checkbox-task-text fs-5" title="First checkbox">First checkbox</p>
               </label>
             </div>
-          </li>
-          <li class="list-group-item rounded-2 py-3">
-            <div class="checkbox-inner">
-              <label class="form-check-label me-2 fs-4">
-                <input class="form-check-input me-1" type="checkbox" value="">
-                Second checkbox drfedjkdnmferjvnkdfjerfdndjrvejiojeri
-              </label>
+            <div class="comment-inner d-flex align-items-center">
+              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
+            </div>
+            <div class="deadline">
+              <p class="deadline-text">13:31</p>
             </div>
           </li>
-          <li class="list-group-item rounded-2 py-3">
+
+          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
             <div class="checkbox-inner">
-              <label class="form-check-label me-2 fs-4">
+              <label class="form-check-label fs-4 d-flex">
                 <input class="form-check-input me-1" type="checkbox" value="">
-                Third checkbox
+                <p class="checkbox-task-text fs-5" title="Second checkbox drfedjkdnmferjvnkdfjerfdndjrvejiojeri Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio repellat eligendi quod assumenda saepe tenetur? Voluptates dignissimos similique atque cupiditate architecto fuga dolor maiores quis? Nobis, laboriosam nostrum. Ipsa.">Second checkbox drfedjkdnmferjvnkdfjerfdndjrvejiojeri Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio repellat eligendi quod assumenda saepe tenetur? Voluptates dignissimos similique atque cupiditate architecto fuga dolor maiores quis? Nobis, laboriosam nostrum. Ipsa.</p>
               </label>
+            </div>
+            <div class="comment-inner d-flex align-items-center">
+              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
+            </div>
+            <div class="deadline">
+              <p class="deadline-text">13:31</p>
+            </div>
+          </li>
+
+          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
+            <div class="checkbox-inner">
+              <label class="form-check-label fs-4 d-flex">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                <p class="checkbox-task-text fs-5" title="Third checkbox">Third checkbox</p>
+              </label>
+            </div>
+            <div class="comment-inner d-flex align-items-center">
+              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
+            </div>
+            <div class="deadline">
+              <p class="deadline-text">13:31</p>
             </div>
           </li>
         </ul>
-        <!-- <div class="input-group mb-3">
-          <div class="input-group-text">
-            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-          </div>
-        </div> -->
 
       </div>
     </div>

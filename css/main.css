@@ -42,22 +42,22 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .main-list-item:nth-child(1){
-  margin-left: 50px;
-  max-width: 475px;
+  margin-left: 40px;
+  max-width: 412px;
   width: 100%;
+  /* border: 1px solid red; */
 }
 
 .main-list-item:nth-child(2){
-  /* margin-left: 50px; */
-  max-width: 500px;
+  max-width: 305px;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.main-list-item:nth-child(3){
+  max-width: 200px;
   width: 100%;
 }
-/*
-.main-list-item:nth-child(1){
-  margin-left: 50px;
-  max-width: 500px;
-  width: 100%;
-} */
 
 /* .main-list-item:nth-child(1){
   margin-left: 50px;
@@ -66,17 +66,26 @@ h1, h2, h3, h4, h5, h6, p{
 } */
 
 .checkbox-inner{
-  max-width: 500px;
+  max-width: 430px;
   width: 100%;
   border-right: 1px solid grey;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
-.form-check-label{
+.checkbox-task-text, .comment-inner-text{
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.comment-inner{
+  max-width: 300px;
+  width: 100%;
+}
+
+.deadline{
+  border: 1px solid red;
 
 }
