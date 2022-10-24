@@ -14,19 +14,18 @@
       <div class="header-container my-5 border rounded-4 p-3 bg-info">
         <h2 class="todo-title fst-italic text-center my-5 fs-1 fw-bold">Todo list</h2>
         <form class="form d-flex flex-wrap gap-4 flex-row align-items-center justify-content-evenly">
-          <input type="text" class="form-control input-task fs-4" placeholder="Your task:">
-          <input type="text" class="form-control input-comment fs-4" placeholder="Add comment:">
-          <label class="label-time fs-4 fst-italic fw-bold" >time:
-            <input type="time" class="input-time border ms-2 px-2 py-1 rounded-2 fs-4">
-          </label>
+          <input type="text" class="form-control input-task fs-4" required placeholder="Your task:">
+          <!-- <input type="text" class="form-control input-comment fs-4" placeholder="Add comment:"> -->
+          <input type="time" class="input-time border ms-2 px-2 py-1 rounded-2 fs-4" required>
           <select class="select-priority border fs-4 rounded-2 py-1 px-3">
-            <option value="high">Important</option>
-            <option value="normal">Normal</option>
-            <option value="low">Low</option>
+            <option value="Important">Important</option>
+            <option value="Normal">Normal</option>
+            <option value="Low">Low</option>
           </select>
+          <button class="btn btn-primary fs-4 px-5">Add to list</button>
           <div class="basket-img-div">
             <img src="./images/shopping-basket-64-px.png" alt="img">
-            <button class=" basket-btn btn btn-danger fw-bold fs-3">0</button>
+            <span class="basket-btn btn btn-danger fw-bold fs-3">0</span>
           </div>
         </form>
       </div>
@@ -38,65 +37,28 @@
       <div class="main-container my-5 border rounded-4 p-3 bg-info">
         <ul class="main-list list-unstyled d-flex mt-4 py-2">
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal text-secondary fs-5">Tasks name: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Tasks name:</h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal text-secondary fs-5">Tasks of comment: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Deadline:</h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal text-secondary fs-5">Deadline: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Priority:</h3>
           </li>
           <li class="main-list-item">
-            <h3 class="main-item-title fw-normal text-secondary fs-5">Priority: </h3>
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Edit:</h3>
+          </li>
+          <li class="main-list-item">
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Delete:</h3>
+          </li>
+          <li class="main-list-item">
+            <h3 class="main-item-title fw-normal text-secondary fs-6">Add to cart:</h3>
           </li>
         </ul>
 
 
         <ul class="list-group d-flex flex-column gap-3">
-          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
-            <div class="checkbox-inner">
-              <label class="form-check-label fs-4 d-flex">
-                <input class="form-check-input me-1" type="checkbox" value="">
-                <p class="checkbox-task-text fs-5" title="First checkbox">First checkbox</p>
-              </label>
-            </div>
-            <div class="comment-inner d-flex align-items-center">
-              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
-            </div>
-            <div class="deadline">
-              <p class="deadline-text">13:31</p>
-            </div>
-          </li>
-
-          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
-            <div class="checkbox-inner">
-              <label class="form-check-label fs-4 d-flex">
-                <input class="form-check-input me-1" type="checkbox" value="">
-                <p class="checkbox-task-text fs-5" title="Second checkbox drfedjkdnmferjvnkdfjerfdndjrvejiojeri Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio repellat eligendi quod assumenda saepe tenetur? Voluptates dignissimos similique atque cupiditate architecto fuga dolor maiores quis? Nobis, laboriosam nostrum. Ipsa.">Second checkbox drfedjkdnmferjvnkdfjerfdndjrvejiojeri Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti optio repellat eligendi quod assumenda saepe tenetur? Voluptates dignissimos similique atque cupiditate architecto fuga dolor maiores quis? Nobis, laboriosam nostrum. Ipsa.</p>
-              </label>
-            </div>
-            <div class="comment-inner d-flex align-items-center">
-              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
-            </div>
-            <div class="deadline">
-              <p class="deadline-text">13:31</p>
-            </div>
-          </li>
-
-          <li class="list-group-item rounded-2 py-3 d-flex gap-2 flex-wrap align-items-center flex-column">
-            <div class="checkbox-inner">
-              <label class="form-check-label fs-4 d-flex">
-                <input class="form-check-input me-1" type="checkbox" value="">
-                <p class="checkbox-task-text fs-5" title="Third checkbox">Third checkbox</p>
-              </label>
-            </div>
-            <div class="comment-inner d-flex align-items-center">
-              <p class="comment-inner-text" title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium amet eaque doloremque sequi harum quas facilis eligendi officia iure ad, natus at.</p>
-            </div>
-            <div class="deadline">
-              <p class="deadline-text">13:31</p>
-            </div>
-          </li>
+          <!-- <li class="list-group-item rounded-2 d-flex flex-row align-items-center gap-2 flex-wrap"></li> -->
         </ul>
 
       </div>
